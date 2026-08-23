@@ -1,0 +1,41 @@
+{
+  "name": "chat-bot-news",
+  "version": "1.0.0",
+  "description": "Telegram-бот с ежедневной сводкой новостей из источников с разной редакционной позицией",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "digest": "tsx src/scripts/printDigest.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GraphhOrlovv/chat-bot-news.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/GraphhOrlovv/chat-bot-news/issues"
+  },
+  "homepage": "https://github.com/GraphhOrlovv/chat-bot-news#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/client": "^7.9.1",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.12.1",
+    "grammy": "^1.45.1",
+    "node-cron": "^4.6.0",
+    "pino": "^10.3.1",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/node-cron": "^3.0.11",
+    "prisma": "^7.9.1",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
